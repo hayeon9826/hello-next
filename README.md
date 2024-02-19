@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Hello Design System Demo Site
 
-First, run the development server:
+### Introduction
+The Hello Design System Demo Site is a website that showcases how to use the Hello Design System package, a Tailwind CSS-based design system UI. It is built with Next.js 14 and its main features include:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Hello Design System component demos: Demonstrates examples and usage of various components.
+- Code sandboxes: Provides sandboxes where you can directly run and test the code of each component.
+- Design guide: Offers information on component design, usage, accessibility, and more.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation and Usage
+To install and use the Hello Design System package:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install the package using the `npm install -D hello-design-system` or `yarn add --dev hello-design-system` command. 
+2. Import components into your project like `import { Button, TextInput } from "hello-design-system";`.
+3. Use the components in your code.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Using the Demo Site
+Visit the Hello Design System Demo Site through the following link to explore and try out various components directly.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Demo Site: https://hello-design-system.vercel.app/
+- Hello Design System Github: https://github.com/hayeon9826/hello-design-system
