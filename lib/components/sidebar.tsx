@@ -11,7 +11,6 @@ export default function Sidebar({ children }: { children: ReactNode }) {
   return (
     <>
       <aside
-        id="sidebar-multi-level-sidebar"
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
@@ -41,6 +40,19 @@ export default function Sidebar({ children }: { children: ReactNode }) {
                 )}
               >
                 <span className="ms-3">Button</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/components/textInput"
+                className={cn(
+                  "flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group",
+                  {
+                    underline: pathname?.includes("textInput"),
+                  }
+                )}
+              >
+                <span className="ms-3">Text Input</span>
               </Link>
             </li>
           </ul>
