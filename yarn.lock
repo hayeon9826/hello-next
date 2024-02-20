@@ -1355,10 +1355,10 @@ hasown@^2.0.0, hasown@^2.0.1:
   dependencies:
     function-bind "^1.1.2"
 
-hello-design-system@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/hello-design-system/-/hello-design-system-0.0.10.tgz#048614b096aaff7e4aa403e7628cf2291d6d81fb"
-  integrity sha512-gZqwMT9nda55dRY5iftGr4Hyj88qGXR5MZwNHUMs6EgFrwOvsf/8xcV736oh3w758R+ZwpzoelK5KroY3bltXA==
+hello-design-system@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/hello-design-system/-/hello-design-system-0.0.12.tgz#298b8279e7aa0d5a29f319a1efe70acd6c3d733a"
+  integrity sha512-2wEpWjpCuqOkk1Pkggr5pdZLDt3DwtBeG9Gd/mF9T6+SfUxN/pFyfMKQwZfm8txFbCxHmHmothEgqrdfbUy7zQ==
 
 ignore@^5.2.0:
   version "5.3.1"
@@ -2093,6 +2093,11 @@ react-dom@^18:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-icons@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.0.1.tgz#1694e11bfa2a2888cab47dcc30154ce90485feee"
+  integrity sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==
 
 react-is@^16.13.1:
   version "16.13.1"

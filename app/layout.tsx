@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen py-10 mx-auto px-4">
+        <div className="min-h-screen py-10 mx-auto px-4 bg-slate-200">
           <Sidebar>{children}</Sidebar>
         </div>
       </body>
