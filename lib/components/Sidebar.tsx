@@ -119,6 +119,19 @@ export default function Sidebar({ children }: { children: ReactNode }) {
             </li>
             <li>
               <Link
+                href="/components/accordion"
+                className={cn(
+                  "flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group font-light",
+                  {
+                    underline: pathname?.includes("accordion"),
+                  }
+                )}
+              >
+                <span className="ms-3">Accordion</span>
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/foundation/color"
                 className={cn(
                   "flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group font-light",
