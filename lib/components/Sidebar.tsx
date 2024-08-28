@@ -132,6 +132,19 @@ export default function Sidebar({ children }: { children: ReactNode }) {
             </li>
             <li>
               <Link
+                href="/components/carousel"
+                className={cn(
+                  "flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group font-light",
+                  {
+                    underline: pathname?.includes("carousel"),
+                  }
+                )}
+              >
+                <span className="ms-3">Carousel</span>
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/foundation/color"
                 className={cn(
                   "flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group font-light",

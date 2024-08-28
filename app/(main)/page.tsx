@@ -20,7 +20,10 @@ export default function MainPage() {
           projects.
         </p>
         <h1 className="font-semibold text-lg md:text-xl mt-8">Installation</h1>
-        <p className="mt-2">You need Node.js and Tailwind CSS installed.</p>
+        <p className="mt-2">
+          Ensure that you have Node.js ({">"}=18.17.0) and Tailwind CSS
+          installed.
+        </p>
         <ol className="mt-4 list-decimal space-y-4 text-sm pl-4">
           <li>Install the package in your project directory with:</li>
           <pre className="bg-gray-100 p-2 text-sm text-wrap">
@@ -43,6 +46,14 @@ export default function MainPage() {
             dangerouslySetInnerHTML={{ __html: code }}
           />
         </ol>
+        <ul className="mt-8 list-disc">
+          <li>
+            npm repo:{" "}
+            <a className="underline text-rose-600" target="_blank">
+              https://www.npmjs.com/package/hello-design-system
+            </a>
+          </li>
+        </ul>
       </section>
     </>
   );
