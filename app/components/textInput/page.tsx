@@ -1,6 +1,7 @@
 "use client";
 
-import usePrismJs from "@/lib/hooks/usePrismJs";
+import CodeBlock from "@/lib/components/CodeBlock";
+import { useIsClient } from "@/lib/hooks/useIsClient";
 import { TextInput } from "hello-design-system";
 
 const code = `
@@ -21,14 +22,12 @@ const code = `
 `;
 
 export default function TextInputPage() {
-  usePrismJs();
+  const { isClient } = useIsClient();
 
   return (
     <section className="flex flex-col gap-6 justify-center align-middle">
       <h1 className="font-semibold text-lg md:text-xl">Text Input</h1>
-      <pre className="bg-slate-100 pb-4 px-2 text-sm text-wrap rounded-md mb-8 text-gray-700">
-        <code className="language-js">{code}</code>
-      </pre>
+      {isClient && <CodeBlock code={code} />}
       <TextInput />
       <TextInput placeholder="내용을 입력해주세요." />
       <TextInput label="제목" placeholder="내용을 입력해주세요." />

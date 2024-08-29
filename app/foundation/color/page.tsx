@@ -1,8 +1,9 @@
 "use client";
 
+import CodeBlock from "@/lib/components/CodeBlock";
+import { useIsClient } from "@/lib/hooks/useIsClient";
 import { ColorTypes, TextType, Text } from "hello-design-system";
 import cn from "classnames";
-import usePrismJs from "@/lib/hooks/usePrismJs";
 
 const code = `
   // Types
@@ -32,14 +33,12 @@ const code = `
 `;
 
 export default function ColorPage() {
-  usePrismJs();
+  const { isClient } = useIsClient();
 
   return (
     <section className="flex flex-col gap-4 justify-center align-middle">
       <h1 className="font-semibold text-lg md:text-xl">Color</h1>
-      <pre className="bg-slate-100 pb-4 px-2 text-sm text-wrap rounded-md mb-8 text-gray-700">
-        <code className="language-js">{code}</code>
-      </pre>
+      {isClient && <CodeBlock code={code} />}
       <div className="flex gap-4 flex-wrap">
         {Object.entries(ColorTypes)?.map(([key, value]) => (
           <div className="flex flex-col gap-2 pt-4" key={key}>

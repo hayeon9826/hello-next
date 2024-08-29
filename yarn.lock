@@ -1428,10 +1428,10 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hello-design-system@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/hello-design-system/-/hello-design-system-1.0.5.tgz#9c29ccbcfcc5060833b99c2b6d0d2492289d29a4"
-  integrity sha512-cO4BYQT3PRrIH92nDdN2RCVbaRDO7Juv7d03AJZI4WhHbo84ym5zVo6KVPjluhYIbzlFPD7L6KacAyCeag4B7Q==
+hello-design-system@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/hello-design-system/-/hello-design-system-1.1.5.tgz#4d4e610ba1b0c2253bb5eaf1de3ed4530aa3a523"
+  integrity sha512-b6jJEJlTzZgVgYeURNO3g4Ijbmlutb0LnB10+gFHShsSwhuVuc0+9PL4hUkCf567jjnmYW4JSmHyd3XaVti/TQ==
 
 ignore@^5.2.0:
   version "5.3.2"

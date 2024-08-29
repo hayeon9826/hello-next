@@ -1,6 +1,7 @@
 "use client";
 
-import usePrismJs from "@/lib/hooks/usePrismJs";
+import CodeBlock from "@/lib/components/CodeBlock";
+import { useIsClient } from "@/lib/hooks/useIsClient";
 import { Button, ButtonType, Modal } from "hello-design-system";
 import { useState } from "react";
 
@@ -21,15 +22,14 @@ const code = `
 `;
 
 export default function ModalPage() {
-  usePrismJs();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const { isClient } = useIsClient();
 
   return (
     <section className="flex flex-col gap-6 justify-center align-middle">
       <h1 className="font-semibold text-lg md:text-xl">Modal</h1>
-      <pre className="bg-slate-100 pb-4 px-2 text-sm text-wrap rounded-md mb-8 text-gray-700">
-        <code className="language-js">{code}</code>
-      </pre>
+      {isClient && <CodeBlock code={code} />}
       <div>
         <Button
           label="Open Modal"

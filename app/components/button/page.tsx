@@ -1,6 +1,7 @@
 "use client";
 
-import usePrismJs from "@/lib/hooks/usePrismJs";
+import CodeBlock from "@/lib/components/CodeBlock";
+import { useIsClient } from "@/lib/hooks/useIsClient";
 import { Button, ButtonType } from "hello-design-system";
 
 const code = `
@@ -34,14 +35,12 @@ const code = `
 `;
 
 export default function ButtonPage() {
-  usePrismJs();
+  const { isClient } = useIsClient();
 
   return (
     <section className="flex flex-col gap-4 justify-center align-middle">
       <h1 className="font-semibold text-lg md:text-xl">Button</h1>
-      <pre className="bg-slate-100 pb-4 px-2 text-xs text-wrap rounded-md mb-8 text-gray-700">
-        <code className="language-js">{code}</code>
-      </pre>
+      {isClient && <CodeBlock code={code} />}
       <Button label="Label" />
       <div>
         <Button label="Primary true" primary={true} />

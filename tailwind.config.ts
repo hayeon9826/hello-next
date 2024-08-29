@@ -5,7 +5,6 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./lib/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/hello-design-system/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
